@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Pricing</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e8f7fc;
+            text-align: center;
+        }
+        .pricing-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 10px;
+            padding-left: 70px;
+            padding-top: 80px;
+            justify-content: center;
+        }
+        .pricing-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            text-align: center;
+        }
+        .pricing-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .pricing-card h3 {
+            margin: 15px 0 10px;
+            color: #035c7d;
+        }
+        .pricing-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .pricing-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #028f95;
+            margin-bottom: 15px;
+        }
+        .pricing-card button {
+            background: #20c4cb;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .pricing-card button:hover {
+            background: #028f95;
+        }
+        @media (max-width: 900px) {
+            .pricing-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .pricing-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        h1{
+          margin-top: 60px;
+          color: #035c7d;
+        }
+    </style>
+</head>
+<body>
+  <h1> Pricing Section</h1>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <img src="generalteethTreatment.jpg" alt="Dental Treatment">
+            <h3>Dental Treatment</h3>
+            <p>Complete dental care with transparent pricing.</p>
+            <p class="price">Starts from ₹500</p>
+            <button>View Price List</button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="mentorship.jpg" alt="Online Doctor Mentorship">
+            <h3>Online Doctor Mentorship</h3>
+            <p>Get expert advice from certified doctors online.</p>
+            <p class="price">₹250 per session</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="medicine-delivery.webp" alt="Online Medicine Delivery">
+            <h3>Online Medicine Delivery</h3>
+            <p>Order medicines online and get them delivered to your doorstep.</p>
+            <p class="price">Free delivery on orders above ₹1000</p>
+            <button>View More</button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="offlinedental.jpg" alt="Offline Dental Services">
+            <h3>Offline Dental Services</h3>
+            <p>Visit our clinic for personalized treatment.</p>
+            <p class="price">Consultation Fee: ₹300</p>
+            <button>Contact Us</button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="teethwhite.jpg" alt="Teeth Whitening">
+            <h3>Teeth Whitening</h3>
+            <p>Get a brighter smile with professional whitening.</p>
+            <p class="price">₹2000 per session</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="pricing-card">
+            <img src="bracestreat.jpg" alt="Braces Treatment">
+            <h3>Braces Treatment</h3>
+            <p>Align your teeth with the best orthodontic care.</p>
+            <p class="price">₹25,000 onwards</p>
+            <button>Schedule Consultation</button>
+        </div>
+
+    </div>
+</body>
+</html>

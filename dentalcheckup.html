@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Check-up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e8f7fc;
+            text-align: center;
+        }
+        .checkup-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            margin-top: 60px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .checkup-container img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .checkup-container h1 {
+            color: #035c7d;
+            margin: 20px 0;
+        }
+        .checkup-container p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .checkup-container .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #028f95;
+            margin: 15px 0;
+        }
+        .checkup-container button {
+            background: #20c4cb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .checkup-container button:hover {
+            background: #028f95;
+        }
+        h1{
+          color: #035c7d;
+          margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+  <h1>Dental Check-Up</h1>
+    <div class="checkup-container">
+        <img src="dentalcheckup.jpg" alt="Dental Check-up">
+        <h1>Dental Check-up</h1>
+        <p>Ensure your oral health with our comprehensive dental check-ups. Get expert advice and recommendations from our professionals.</p>
+        <p class="price">Starting at ₹250</p>
+        <button id="bookCheckup">Book Appointment</button>
+    </div>
+
+    <script>
+        document.getElementById('bookCheckup').addEventListener('click', function() {
+            alert('Appointement is booked😄');
+        });
+    </script>
+</body>
+</html>

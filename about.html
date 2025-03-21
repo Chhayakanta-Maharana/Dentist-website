@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dent-Med - About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #e6f7ff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #20cfcf;
+      color: white;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    header h1 span { color: #0044cc; }
+    header h1 .med { color: black; }
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.4;
+    }
+    .about-section {
+      padding: 60px 10%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .about-section div {
+      flex: 1;
+      max-width: 48%;
+    }
+    .about-section img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .about-section h2 {
+      font-size: 2.5rem;
+      color: #0044cc;
+    }
+    .about-section p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #20cfcf;
+      color: white;
+    }
+    .doctor-section {
+      padding: 60px 10%;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .doctor-section h2 {
+      color: #0044cc;
+      margin-bottom: 40px;
+    }
+    .doctor-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .doctor-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 30%;
+    }
+    .doctor-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .doctor-card h3 {
+      margin: 10px 0;
+      color: #0044cc;
+    }
+    @media (max-width: 768px) {
+      .about-section div, .doctor-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .doctor-card:hover{
+      transform: translateY(-10px);
+    }
+
+    footer {
+    background: #035c7d;
+    color: white;
+    padding: 25px 8%;
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>Dent</span><span class="med">-Med</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <div>
+      <h2>About Dent-Med</h2>
+      <p>Dent-Med is dedicated to providing exceptional dental care with a focus on transparency, quality, and affordability. Our experienced team of dentists, combined with state-of-the-art technology, ensures that every patient receives the best treatment possible.</p>
+      <p>With a mission to make dental care accessible to all, we prioritize patient comfort and excellence in every service we offer.</p>
+      <p>At Dent-Med, our highly skilled staff includes experienced dentists, hygienists, and support staff, all committed to providing exceptional care. We invest in the latest dental technology to ensure accurate diagnosis and effective treatment. Our core values include patient-centric care, transparency, and continuous innovation.</p>
+      <p>We also engage in community outreach programs, offering dental education and free check-up camps to underserved communities. Your smile is our priority!</p>
+    </div>
+    <div>
+      <img src="teeth.jpg" alt="Dentist examining patient" />
+    </div>
+  </section>
+
+  <section class="doctor-section">
+    <h2>Our Doctors</h2>
+    <div class="doctor-cards">
+      <div class="doctor-card">
+        <img src="Orthodontist.jpg" alt="Doctor 1" />
+        <h3>Dr. Peter Parker</h3>
+        <p>Orthodontist</p>
+      </div>
+      <div class="doctor-card">
+        <img src="Endodontist.jpg" alt="Doctor 2" />
+        <h3>Dr. Harry Potter</h3>
+        <p>Endodontist</p>
+      </div>
+      <div class="doctor-card">
+        <img src="Peri.jpg" alt="Doctor 3"/>
+        <h3>Dr. Emily Rose</h3>
+        <p>Periodontist</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p >&copy; 2025 Dent-Med. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

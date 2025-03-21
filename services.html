@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dent-Med - Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #e6f7ff;
+      color: #333;
+    }
+    header {
+      background-color: #20cfcf;
+      color: white;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 span { color: #0044cc; }
+    header h1 .med { color: black; }
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.4;
+    }
+    .services-section {
+      padding: 60px 10%;
+      text-align: center;
+    }
+    .services-section h2 {
+      color: #0044cc;
+      margin-bottom: 20px;
+    }
+    .services-section p {
+      margin-bottom: 40px;
+      color: #555;
+    }
+    .service-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .service-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 30%;
+    }
+    .service-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .service-card h3 {
+      margin: 10px 0;
+      color: #0044cc;
+    }
+    @media (max-width: 768px) {
+      .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #20cfcf;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>Dent</span><span class="med">-Med</span></h1>
+    <nav>
+      <a href="#">Home</a>
+    </nav>
+  </header>
+
+  <section class="services-section">
+    <h2>Our Dental Services</h2>
+    <p>We provide high-quality dental treatments with transparent pricing and expert care.</p>
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="/mnt/data/image.png" alt="Teeth Cleaning" />
+        <h3>Teeth Cleaning</h3>
+        <p>Get professional dental cleaning for a bright and healthy smile.</p>
+      </div>
+      <div class="service-card">
+        <img src="/mnt/data/image.png" alt="Braces & Aligners" />
+        <h3>Braces & Aligners</h3>
+        <p>Straighten your teeth with modern braces and clear aligners.</p>
+      </div>
+      <div class="service-card">
+        <img src="/mnt/data/image.png" alt="Dental Implants" />
+        <h3>Dental Implants</h3>
+        <p>Restore missing teeth with high-quality dental implants.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dent-Med. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
